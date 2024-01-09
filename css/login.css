@@ -1,0 +1,284 @@
+@import url("./common.css");
+/* 导入重置样式 */
+@import url("./reset.css");
+
+/* 超链接 */
+a {
+    color: #41ac52;
+}
+
+/* 更多的缩进 */
+.container .login .form-item .more-text-index {
+    padding-left: 65px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    padding-top: 30px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .login .switch-menu {
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+
+.container .login .switch-menu span {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+/* 选中 */
+.container .login .switch-menu span.selected {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+
+.container .login .form-item {
+    font-size: 13px;
+}
+
+/* 短信登录注册 */
+.container .login .form-item {
+    margin: 10px 0;
+    position: relative;
+}
+
+.container .login .form-item .txt {
+    font-size: 12px;
+}
+
+.container .login .form-item .country-code {
+    cursor: pointer;
+}
+
+.container .login .form-item .country-code {
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    left: 0;
+    top: 4px;
+    text-align: center;
+    color: #333;
+    font-weight: bolid;
+    font-size: 15px;
+    line-height: 26px;
+    border-right: 1px solid #e4e6e5;
+}
+
+.container .login .form-item .country-code .choose-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    cursor: default;
+}
+
+.container .login .form-item .country-code .choose-area .center {
+    width: 285px;
+    height: 225px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    /* 该元素有圆角，子元素背景颜色会溢出区，隐藏起来 */
+    overflow: hidden;
+}
+
+.container .login .form-item .country-code .choose-area .center .title {
+    background-color: #ebf5eb;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 10px;
+    color: #060;
+    font-weight: bold;
+    cursor: auto;
+}
+
+.container .login .form-item .country-code .choose-area .center ul {
+    height: 180px;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.country-code .choose-area .center ul li .right {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.country-code .choose-area .center ul li.selected {
+    color: #42bd56
+}
+
+.country-code .choose-area .center ul li.selected .iconfont {
+    color: #42bd56;
+    margin-left: 10px;
+}
+
+.country-code .choose-area .center ul li.selected .right {
+    color: #42bd56
+}
+
+.container .login .form-item .ab-right {
+    position: absolute;
+    right: 7px;
+    top: 11px;
+    cursor: pointer;
+}
+
+.container .login .form-item .btn {
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+}
+
+.container .login .form-item.tip {
+    font-size: 12px;
+    color: #333;
+}
+
+.container .login input[type="checkbox"] {
+    vertical-align: -2px
+}
+
+.btn:disabled {
+    background: rgba(66, 189, 86, .5);
+    cursor: not-allowed;
+}
+
+/* 底部 */
+.bottom .msg {
+    font-size: 11px;
+    vertical-align: 2px;
+}
+
+.bottom {
+    border-top: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bottom i {
+    margin-left: 12px;
+}
+
+.bottom i.icon-weixin {
+    color: #34950E
+}
+
+.bottom i.icon-weibo {
+    color: #EA5D5C
+}
+
+/* 二维码 */
+.container .qrcode {
+    font-size: 13px;
+}
+
+.container .qrcode .title {
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+
+.container .qrcode .code {
+    text-align: center;
+    font-size: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container .qrcode .code img {
+    width: 170px;
+    height: 170px;
+}
+
+.container .qrcode .tip {
+    text-align: center;
+    width: 183px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(0, 0, 0, .08);
+    color: #494949;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container .change {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+/* change图标 */
+.container .change .icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.container .change .icon.icon-qrcode {
+    background: url("../img/icon-qrcode.png") no-repeat left top/100% 100%;
+}
+
+.container .change .icon.icon-pc {
+    background: url("../img/icon-qrcode2.png") no-repeat left top/100% 100%
+}
+
+.container .pointer {
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid rgba(66, 189, 86, .3);
+    color: #666;
+    font-size: 10px;
+    background-color: #f5faf9;
+    top: 10px;
+    right: 40px;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+.container .change:hover+.pointer {
+    display: block;
+}
